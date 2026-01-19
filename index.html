@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>my website02</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -15,24 +16,76 @@
         <li class="nav-item"><a href="" class="nav-link">Episodes</a></li>
         <li class="nav-item"><a href="" class="nav-link">Host</a></li>
       </ul>
-      <button class="primary-btn">Subscribe</button>
+      <button class="primary-btn">Subscribe<i class="fa-solid fa-arrow-right"></i></button>
     </nav>
     
      <section class="banner">
+       <div class="banner-area">
        <div image-section>
-        <div>
-        <img class="img-circle" src="assets/hero-circle.png" alt=""></div>
+        <div class="img-container">
+        <img class="img-circle" src="assets/hero-circle.png" alt="">
+      </div>
         <img class="microphone" src="assets/microphone.png" alt="">
+           <div>
+              <button class="badge">new</button>
+            </div>
        </div>
+         
        <div class="banner-content">
         <h2 class="banner-title">TechWave</h2>
         <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
-        <div class="button">
-          <button class="btn-first">Listen on Spotify</button>
-          <button class="Subscribe ">Subscribe</button>
+        <div class="button diplay-flex">
+          <div>
+          <button class="btn-first diplay-flex">Listen on Spotify<i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div>
+          <button class="Subscribe ">Subscribe<i class="fa-solid fa-arrow-right"></i></button>
         </div>
+        </div>
+       </div>
        </div>
      </section>
   </header>
+
+<!-- about-areas  -->
+
+  <main>
+    <section class="about">
+      <div class="about-section">
+      <div>
+      <h2 class="about-title">
+        About the Podcast
+      </h2>
+      <p class="about-content">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+        <br>
+We break down complex topics into digestible insights, explore productivity strategies that actually work,
+<br>
+and share stories of personal growth from industry leaders.
+<br>
+<br>
+<br>
+Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+</div>
+
+   <div brand-value>
+      <h2 count>150K+</h2>
+      <p>Monthly Listeners</p>
+   </div>
+   <div brand-value>
+      <h2 count>200+</h2>
+      <p>Episodes Published</p>
+   </div>
+   <div brand-value>
+      <h2 count>4.9★</h2>
+      <p>Average Rating</p>
+   </div>
+   <div brand-value>
+      <h2 count>50+</h2>
+      <p>Industry Experts</p>
+   </div>
+   </div>
+    </section>
+  </main>
+
 </body>
 </html>
