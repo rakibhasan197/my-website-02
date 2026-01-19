@@ -228,13 +228,105 @@ footer{
     "sidebar  location location location"
     "footer  footer  footer nav";
 }
+
+/* feature card styles areas  */
+.card-container{
+/* border: 2px solid yellow; */
+background-color: rgba(53, 17, 101, 0.4);
+color: #FFFFFF;
+width: 300px;
+height: 400px;
+border-radius: 12px;
+margin-bottom: 120px;
+
+}
+
+.feature h2{
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card-title{
+  font-weight: 700;
+  font-size: 1.20rem;
+  padding: 24px 24px 0 24px;
+}
+
+.text{
+color: #b8b4b4;
+padding: 10px 24px;
+}
+.feature-card{
+  justify-content: center;
+  gap: 30px;
+}
+.icon-img{
+ padding: 0 24px;
+}
+
+.time{
+  position: relative;
+  left: 50px;
+  top: -20px;
+}
+
+/* host areas styles  */
+.host-container{
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 25px;
+ 
+}
+.host-content{
+ padding: 48px 40px 48px 50px;
+}
+
+.host-container img{
+  padding: 40px 0 40px 40px;
+}
+.host-title{
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 48px;
+}
+
+.host-content h4{
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.host-content p{
+  color: #b8b4b4;
+  margin-top: 16px;
+}
+
+.item{
+  list-style: none;
+  position: relative;
+  left: -40px;
+}
 @media screen and (max-width:576px){
   .navbar, .banner,
    .button,
-   .about-section,{
+   .about-section, 
+   .feature-card{
     flex-direction: column;
   }
-
+   
+  .card-container{
+    margin-left: 70px;
+    margin-bottom: 20px;
+  }
   .button{
     justify-content: center;
     align-items: center;
@@ -256,6 +348,11 @@ footer{
   "location"
   "footer"
   "nav";
+} 
+.host-container{
+  flex-direction: column;
+  width: 400px;
+  margin: 20px auto;
 }
 }
 
