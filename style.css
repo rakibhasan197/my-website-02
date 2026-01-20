@@ -12,7 +12,14 @@ body{
   display: flex;
 }
 
-
+@keyframes ping-pong {
+  from{
+    left: 0;
+  }
+  to{
+    left: 50px;
+  }
+}
 .navbar{
   justify-content: space-between;
   align-items: center;
@@ -57,12 +64,10 @@ list-style: none;
   border-radius: 10000px;
   color: #FFFFFF;
   margin-left: 150px;
-  transition: transform 1s;
+  position: relative;
+  animation: ping-pong 1s ease-in-out 1s infinite alternate;
 }
 
-.primary-btn:hover{
-   transform: rotate(360deg);
-}
 
 /* hero sections areas styles  */
 .banner{
@@ -109,6 +114,8 @@ list-style: none;
   color: #FFFFFF;
   font-weight: 600;
   font-size: 1rem;
+  position: relative;
+  animation: ping-pong 1s ease-in-out 1s infinite alternate;
 }
 
 
@@ -125,6 +132,8 @@ list-style: none;
   font-weight: 600;
   background-image: url(assets/hero-bg.png);
   border: 1px solid #00FF88;
+  position: relative;
+  animation: ping-pong 1s ease-in-out 1s infinite alternate;
 }
 
 .primary-btn i{
