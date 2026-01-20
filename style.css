@@ -18,6 +18,10 @@ body{
   align-items: center;
   margin: 24px 120px;
 }
+
+.three-dot{
+  visibility: hidden;
+}
 .brand{
   width: 220px;
   height: 32px;
@@ -52,7 +56,11 @@ list-style: none;
   height: 44px;
   border-radius: 10000px;
   color: #FFFFFF;
+  transition: transform 1s;
+}
 
+.primary-btn:hover{
+   transform: rotate(360deg);
 }
 
 /* hero sections areas styles  */
@@ -133,8 +141,12 @@ list-style: none;
   position: relative;
   top: -300px;
   left: 150px;
+  transition: transform 3s
 }
 
+.badge:hover{
+  transform: rotate(360deg);
+}
 
 /* about sections areas  */
 
@@ -315,6 +327,52 @@ padding: 10px 24px;
   position: relative;
   left: -40px;
 }
+
+/* footer styles areas  */
+
+.footer-section{
+   width: 1600px;
+   background-image: url(./assets/footer-bg.png);
+   background-position: center;
+   background-size: contain;
+   padding: 100px 0;
+   justify-content: center;
+   margin-top: 120px;
+   margin-bottom: 120px;
+}
+
+.foot-title{
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 120px;
+  margin-right: 180px;
+}
+.footer-icons{
+  gap: 50px;
+  width: 1360px;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  margin-left: 140px;
+ 
+}
+.item p{
+  color: #b8b4b4;
+  position: relative;
+  left: 20px
+}
+
+.footer-section .copy{
+  color: #b8b4b4;
+  text-align: center;
+}
+
+
+
 @media screen and (max-width:576px){
   .navbar, .banner,
    .button,
@@ -323,6 +381,16 @@ padding: 10px 24px;
     flex-direction: column;
   }
    
+  .navbar .nav-links, .primary-btn{
+  visibility: hidden;
+  }
+.navbar .three-dot{
+    visibility: visible;
+    position: relative;
+    left: 200px;
+    bottom: 147px;
+  
+  }
   .card-container{
     margin-left: 70px;
     margin-bottom: 20px;
@@ -334,8 +402,11 @@ padding: 10px 24px;
     gap: 20px;
   }
   .brand-container{
-    flex-direction: column;
+    /* flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 80px;
+    margin-left: 80px;
     gap: 20px;
   }
 .container{
@@ -354,6 +425,31 @@ padding: 10px 24px;
   width: 400px;
   margin: 20px auto;
 }
-}
+ .footer-section{
+  background-image: url(./assets/footer-bg.png);
+  background-size: cover;
+  background-position: center;
 
+
+  
+ }
+.footer-container{
+  flex-direction: column;
+  margin: 0 auto;
+}
+.foot-title{
+  width: 200px;
+  margin-left: 150px;
+}
+.footer-icons{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ width: 300px;
+ margin-top: 50px;
+}
+.copy{
+  width: 300px;
+  margin-left: 85px;
+}
+}
 
