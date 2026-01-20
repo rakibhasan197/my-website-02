@@ -101,10 +101,14 @@ list-style: none;
   font-size: 1.25rem;
   color: rgba(255, 255, 255, 1);
 }
+
+
 .banner-content{
   margin-top: 40px;
   margin-bottom: 90px;
 }
+
+
 .btn-first{
     background: linear-gradient(#FB09B4, #9100F8, #F7E93F);
   padding: 12px 16px;
@@ -233,7 +237,6 @@ main{
 }
 
 
-
 footer{
   grid-area: footer;
 }
@@ -253,14 +256,12 @@ footer{
 
 /* feature card styles areas  */
 .card-container{
-/* border: 2px solid yellow; */
 background-color: rgba(53, 17, 101, 0.4);
 color: #FFFFFF;
 width: 300px;
 height: 400px;
 border-radius: 12px;
 margin-bottom: 120px;
-
 }
 
 .feature h2{
@@ -412,8 +413,8 @@ padding: 10px 24px;
     margin-top: 50px;
     gap: 20px;
   }
+
   .brand-container{
-    /* flex-direction: column; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 80px;
@@ -448,7 +449,6 @@ padding: 10px 24px;
   margin: 20px auto;
 }
  .footer-section{
-  background-image: url(./assets/footer-bg.png);
   background-size: cover;
   background-position: center;
   width: 440px;
@@ -469,6 +469,7 @@ padding: 10px 24px;
  width: 300px;
  margin-top: 50px;
 }
+
 .copy{
   width: 300px;
   margin-left: 85px;
